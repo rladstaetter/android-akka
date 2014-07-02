@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="net.ladstatt.apps.android"
+          android:versionCode="7"
+          android:versionName="1.5"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk android:minSdkVersion="15"/>
+
+    <application
+            android:icon="@drawable/ic_launcher"
+            android:debuggable="false"
+            android:label="Android Akka">
+
+        <activity
+                android:name=".AkkaAndroid"
+                android:screenOrientation="portrait"
+                android:label="AkkaAndroid">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+</manifest>
