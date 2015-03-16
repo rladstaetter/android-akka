@@ -9,26 +9,26 @@ which uses [Akka](http://akka.io/).
 Install everything from the SDK manager. Yes, everything.
 
 #### Deploy android sdk to maven locally
-```
+```bash
 git clone https://github.com/srcreigh/maven-android-sdk-deployer
 cd maven-android-sdk-deployer
 mvn install
 ```
 
 #### Install the zinc incremental compiler
-```
+```bash
 brew install zinc
 zinc -start
 ```
 
 #### Build the app
-```
+```bash
 cd android-akka
 mvn install
 ```
 
 ### Deploy the app to your device
-```
+```bash
 adb install target/android-akka.apk
 ```
 
