@@ -3,3 +3,6 @@
 .cache
 target/
 .idea/
+gen/
+gen-external-apklibs/
+cache
